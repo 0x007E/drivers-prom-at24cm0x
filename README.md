@@ -48,23 +48,23 @@ The library can be downloaded (`zip` or `tar`), cloned or used as submodule in a
 
 ``` bash
 mkdir -p ./drivers/prom/
-git clone https://github.com/0x007E/drivers-prom-at24cm0x.git
+git clone https://github.com/0x007E/drivers-prom-at24cm0x.git ./drivers/prom
 mv ./drivers/prom/drivers-prom-at24cm0x ./drivers/prom/at24cm0x
 
 mkdir -p ./hal/
-git clone https://github.com/0x007E/hal-common.git
+git clone https://github.com/0x007E/hal-common.git ./hal
 mv ./hal/hal-common ./hal/common
 
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # Hardware abstraction layer of TWI (Must fit the used plattform)
 mkdir -p ./hal/avr0/
-git clone https://github.com/0x007E/hal-avr0-twi.git
+git clone https://github.com/0x007E/hal-avr0-twi.git ./hal/avr0
 mv ./hal/avr0/hal-avr0-twi ./hal/avr0/twi
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 mkdir -p ./utils/
-git clone https://github.com/0x007E/utils-macros.git
-git clone https://github.com/0x007E/utils-systick.git
+git clone https://github.com/0x007E/utils-macros.git  ./utils
+git clone https://github.com/0x007E/utils-systick.git ./utils
 mv ./utils/utils-macros  ./utils/macros
 mv ./utils/utils-systick ./utils/systick
 ```
@@ -148,7 +148,6 @@ int main(void)
     {
         // Output -> current address
     }
-
 }
 ```
 
