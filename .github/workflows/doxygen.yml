@@ -1,4 +1,4 @@
-name: doxygen-deployment
+name: Doxygen Deployment
 
 on:
   push:

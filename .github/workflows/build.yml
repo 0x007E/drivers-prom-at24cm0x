@@ -8,11 +8,11 @@ on:
     branches:
     - main
 
+env:
+  OUTPUT_FOLDER: "./output"
+  
 jobs:
   pack-library:
-    env:
-      OUTPUT_FOLDER: "./output"
-      FILENAME: "library"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository for deployment
