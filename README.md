@@ -103,6 +103,11 @@ void systick_timer_wait_ms(unsigned int ms)
 	systick_timer_wait(ms);
 }
 
+// Only necessary if AT24CM0X_WP_CONTROL_EN define is set!
+// If the EEPROM WP Pin is connectet to the microcontroller the
+// EEPROM library can enable/disable the WP pin when necessary.
+// This prevents the EEPROM to be written accidentally through
+// the twi bus.
 void at24cm0x_wp(AT24CM0X_WP_Mode mode)
 {
 	if(mode)
@@ -120,6 +125,11 @@ int main(void)
 
     at24cm0x_init();
 
+    // If more AT24CM0X devices share the same bus the AT24CM0X_MULTI_DEVICES
+    // define can be enabled. This enables the possibility to select different
+    // AT24CM0X devices on the bus!
+    at24cm0x_device(AT24CM0X_BASE_ADDRESS | DEVICE_A_PINS);
+    
     if(at24cm0x_write_byte(0x00000000, 0x01) == AT24CM0X_Status_Done)
     {
         // Byte written!
