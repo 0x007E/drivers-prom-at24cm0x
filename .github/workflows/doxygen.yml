@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  DOXYGEN_VERSION: 1.14.0
+  DOXYGEN_VERSION: 1.16.1
   DOXYGEN_CONFIG: "doxygen.config"
 
 jobs:
