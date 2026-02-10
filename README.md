@@ -46,7 +46,7 @@ The library can be downloaded (`zip` or `tar`), cloned or used as submodule in a
 
 ### Using with `git clone`
 
-``` bash
+```sh
 mkdir -p ./drivers/prom/
 git clone https://github.com/0x007E/drivers-prom-at24cm0x.git ./drivers/prom
 mv ./drivers/prom/drivers-prom-at24cm0x ./drivers/prom/at24cm0x
@@ -71,7 +71,7 @@ mv ./utils/utils-systick ./utils/systick
 
 ### Using as `git submodule`
 
-``` bash
+```sh
 git submodule add https://github.com/0x007E/drivers-prom-at24cm0x.git drivers/prom/at24cm0x
 git submodule add https://github.com/0x007E/hal-common.git            hal/common
 
@@ -86,7 +86,7 @@ git submodule add https://github.com/0x007E/utils-systick.git         utils/syst
 
 ## Programming
 
-``` c
+```c
 #include "../hal/PLATFORM/twi/twi.h"
 
 #include "../lib/drivers/prom/at24cm0x/at24cm0x.h"
