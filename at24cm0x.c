@@ -14,7 +14,7 @@
  * 
  * @note This file is part of a larger project and subject to the license specified in the repository. For updates and the complete revision history, see the GitHub repository.
  * 
- * @see https://github.com/0x007e/driver-prom-at24cm0x "AT24CM0X eeprom driver library"
+ * @see https://github.com/0x007e/drivers-prom-at24cm0x "AT24CM0X eeprom driver library"
  */
 
 #include "at24cm0x.h"
