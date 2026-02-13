@@ -2,6 +2,8 @@
 
 # `AT24CM0X EEPROM Driver`
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/0x007E/drivers-prom-at24cm0x)
+
 This hardware abstracted driver can be used to interact with an [AT24CM0X](#additional-information) over `TWI`/`I2C`. The hardware layer is fully abstract an can be switched between different plattforms. The `TWI`/`I2C` library has to impelement the [twi.h](https://0x007e.github.io/drivers-prom-at24cm0x/twi_8c.html)-header used in this repository.
 
 ## File Structure
